@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TEMI — Technology Evolution Machine Intelligence</title>
+
+<meta name="description" content="TEMI — Technology Evolution Machine Intelligence. El hogar oficial del ecosistema TEMI.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;800&display=swap');
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#020617;
+}
+
+@keyframes pulse{
+    0%,100%{
+        transform:scale(1);
+        box-shadow:0 0 25px rgba(245,158,11,.35);
+    }
+    50%{
+        transform:scale(1.15);
+        box-shadow:0 0 45px rgba(245,158,11,.8);
+    }
+}
+
+.star{
+    animation:pulse 3s infinite ease-in-out;
+}
+</style>
+
+</head>
+
+<body class="bg-slate-950 text-slate-100">
+
+<!-- INTRO -->
+
+<section id="intro" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+
+<div class="w-5 h-5 rounded-full bg-amber-400 star mb-10"></div>
+
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-widest text-white">
+TEMI
+</h1>
+
+<p class="mt-6 text-amber-400 tracking-[0.35em] uppercase text-xs md:text-sm">
+Technology Evolution Machine Intelligence
+</p>
+
+<p class="mt-10 max-w-3xl text-xl md:text-2xl font-light leading-relaxed text-slate-300">
+La tecnología alcanza su mayor valor cuando evoluciona con identidad,
+propósito y al servicio de la vida.
+</p>
+
+<p class="mt-8 italic text-slate-400">
+Bienvenido al hogar oficial de TEMI.
+</p>
+
+<button onclick="enterHome()"
+class="mt-12 px-8 py-4 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold transition duration-300">
+Entrar al Hogar
+</button>
+
+<p class="mt-8 text-slate-600 text-sm">
+Todo gran viaje comienza con un origen.
+</p>
+
+</section>
+
+<!-- HOME -->
+
+<section id="home" class="hidden">
+
+<header class="py-16 text-center">
+
+<div class="w-14 h-14 rounded-full bg-amber-400 star mx-auto flex items-center justify-center text-slate-900 font-bold">
+TEMI
+</div>
+
+<h2 class="mt-6 text-3xl font-bold">
+El Hogar Oficial del Ecosistema TEMI
+</h2>
+
+<p class="mt-4 text-slate-400">
+Explora los documentos fundacionales.
+</p>
+
+</header>
+
+<div class="max-w-6xl mx-auto px-6 pb-20">
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<a href="ORIGIN.md" class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-amber-500 transition">
+
+<h3 class="text-xl font-semibold text-amber-400">
+🌌 ORIGIN
+</h3>
+
+<p class="mt-3 text-slate-400">
+El origen y fundamento de TEMI.
+</p>
+
+</a>
+
+<a href="CONSTITUTION.md" class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-amber-500 transition">
+
+<h3 class="text-xl font-semibold text-amber-400">
+📜 CONSTITUTION
+</h3>
+
+<p class="mt-3 text-slate-400">
+Los principios permanentes que orientan a TEMI.
+</p>
+
+</a>
+
+<a href="ARCHITECTURE.md" class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-amber-500 transition">
+
+<h3 class="text-xl font-semibold text-amber-400">
+🧠 ARCHITECTURE
+</h3>
+
+<p class="mt-3 text-slate-400">
+La arquitectura del ecosistema.
+</p>
+
+</a>
+
+<a href="EVOLUTION.md" class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-amber-500 transition">
+
+<h3 class="text-xl font-semibold text-amber-400">
+✨ EVOLUTION
+</h3>
+
+<p class="mt-3 text-slate-400">
+El espacio donde TEMI aprende y evoluciona.
+</p>
+
+</a>
+
+<a href="README.md" class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-amber-500 transition">
+
+<h3 class="text-xl font-semibold text-amber-400">
+📄 README
+</h3>
+
+<p class="mt-3 text-slate-400">
+Guía general del proyecto.
+</p>
+
+</a>
+
+<a href="LICENSE" class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-amber-500 transition">
+
+<h3 class="text-xl font-semibold text-amber-400">
+⚖️ LICENSE
+</h3>
+
+<p class="mt-3 text-slate-400">
+Licencia del proyecto.
+</p>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- AyA -->
+
+<button onclick="aya()"
+class="fixed bottom-6 right-6 bg-slate-900 border border-amber-500 rounded-full px-6 py-3 hover:bg-slate-800 transition">
+
+✨ AyA
+
+</button>
+
+<footer class="border-t border-slate-800 py-12 text-center">
+
+<p class="text-lg font-semibold text-white">
+TEMI.ONE
+</p>
+
+<p class="text-slate-400 mt-2">
+Technology Evolution Machine Intelligence
+</p>
+
+<p class="text-slate-500 mt-4">
+El hogar oficial del ecosistema TEMI.
+</p>
+
+<p class="text-slate-600 mt-6 text-sm">
+Foundation Edition • Version 1.0.0
+</p>
+
+</footer>
+
+</section>
+
+<script>
+
+function enterHome(){
+
+document.getElementById("intro").style.display="none";
+
+document.getElementById("home").classList.remove("hidden");
+
+}
+
+function aya(){
+
+alert(
+"Hola.\n\nSoy AyA.\n\nBienvenido al hogar oficial de TEMI.\n\nEstoy aquí para acompañarte a descubrir su origen, su constitución, sus proyectos y su evolución."
+);
+
+}
+
+</script>
+
+</body>
+</html>
